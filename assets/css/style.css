@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 170px 1fr;
+
+}
+
+header{
+    grid-area: header;
+    background-color:mediumseagreen;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+menu{
+    grid-area: menu;
+    background-color: beige;
+    margin: 0;
+}
+
+main{
+    grid-area: main;
+    background-image: url(../imgs/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 30%;
+    margin: 1%;
+    text-align: center;
+    border: 1px solid mediumseagreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid mediumseagreen;
+}
+
+h2{
+    margin: 7px;
+}
+
+.price{
+    margin: 10px;
+    color: coral;
+    font-size: large;
+
+}
+
+.btn{
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+footer{
+    grid-area: footer;
+    background-color:mediumseagreen;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+dd{
+    margin-inline-start: 0;
+}
